@@ -1,0 +1,22 @@
+<div id="newNoteDiv" class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <form [formGroup]="notesForm" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <textarea maxlength="50" type="text" formControlName="description" class="form-control" placeholder="notes goes here..."
+                        [ngClass]="{ 'is-invalid': submitted && f.description.errors }"></textarea>
+                    <div *ngIf="submitted && f.description.errors" class="invalid-feedback">
+                        <div *ngIf="f.description.errors.required">Description is required</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" [disabled]="loading" class="btn btn-primary btn-sm">
+                        <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                        Save
+                    </button>
+                    <button type="button" class="btn btn-link" (click)="close()">Discard</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

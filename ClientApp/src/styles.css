@@ -1,0 +1,29 @@
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #e01a76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+#displayNoteDiv .title {
+    margin-left: -15px;
+    border-bottom: 1px solid #808808;
+    padding: 5px;
+    margin-right: -15px;
+}
+
+#displayNoteDiv .title strong {
+    color: #0000ff;
+}
+
+#displayNoteDiv .content {
+    padding: 15px 5px 5px 5px;
+    white-space: pre-wrap;
+}

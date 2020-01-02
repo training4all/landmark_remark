@@ -1,0 +1,53 @@
+<div id="searchControlDiv" class="container">
+    <div class="row">
+        <form [formGroup]="searchForm" (ngSubmit)="onSubmit()" class="form-inline">
+            <div class="form-group col-sm-5">
+                <input
+                    type="text"
+                    maxlength="50"
+                    formControlName="searchText"
+                    class="form-control"
+                    placeholder="Search Notes..."
+                    [ngClass]="{ 'is-invalid': submitted && f.searchText.errors }"
+                >
+            </div>
+            <div class="form-group col-sm-3">
+                <label>
+                    <input
+                        type="radio"
+                        value="notesText"
+                        formControlName="seachType"
+                        name="seachType"
+                    >
+                    <span>notes-text</span>
+                </label>
+                <label>
+                    <input
+                        type="radio"
+                        value="userName"
+                        formControlName="seachType"
+                        name="seachType"
+                    >
+                    <span>user-name</span>
+                </label>
+            </div>
+            <div class="form-group col-sm-2">
+                <button
+                    type="submit"
+                    [disabled]="loading"
+                    class="btn btn-primary btn-sm">
+                        <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                    Search
+                </button>
+            </div>
+            <div class="form-group col-sm-2">
+                <button
+                    type="button"
+                    class="btn btn-secondary btn-sm"
+                    (click)="onClear()">
+                        Clear
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

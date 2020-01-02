@@ -1,0 +1,11 @@
+<div #mapContainer id="map"></div>
+
+<app-add-note-window
+    [hidden]="true"
+    (discardClicked)="onDiscardClicked()"
+></app-add-note-window>
+
+<app-map-search-control
+    (filterMarkers)="filterMarkers($event)"
+    (clearSearch)="clearSearch()"
+></app-map-search-control>

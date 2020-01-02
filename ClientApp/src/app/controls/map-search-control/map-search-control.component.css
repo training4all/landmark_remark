@@ -1,0 +1,38 @@
+#searchControlDiv {
+ background-color: #fff;
+ width: 50%;
+}
+
+#searchControlDiv input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    border: 2px solid #808080;
+  }
+
+  #searchControlDiv label {
+    font-size: 15px;
+  }
+
+  /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+    #searchControlDiv input[type=text] {
+        float: left;
+        display: block;
+        text-align: left;
+        width: 90%;
+        padding: 8px;
+        margin-top: 56px;
+        z-index: 1;
+        font-size: 12px;
+    }
+    #searchControlDiv input[type=text] {
+      border: 1px solid #ccc;
+    }
+    #searchControlDiv {
+        left: 13px !important;
+      }
+  }
