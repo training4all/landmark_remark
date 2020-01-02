@@ -1,6 +1,6 @@
 ### Installation
  - Must have Node and NPM installed on machine.
- - Clone repo from github (GITHUB_URL)
+ - Clone repo from github (https://github.com/training4all/landmark_remark.git)
  - Must have VS 2017 or greater installed. For VS 2017, perform below steps
    ```sh
     - Open VS-2017
