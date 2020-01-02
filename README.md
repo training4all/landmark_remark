@@ -1,7 +1,7 @@
 ### Installation
  - Must have Node and NPM installed on machine.
  - Clone repo from github (https://github.com/training4all/landmark_remark.git)
- - Must have VS 2017 or greater installed. For VS 2017, perform below steps
+ - Must have VS 2017 or greater installed. I have created the app in VS 2019 but for VS 2017, perform below steps
    ```sh
     - Open VS-2017
     - Tick checkbox ('use preview of the .NET Core SDK')
